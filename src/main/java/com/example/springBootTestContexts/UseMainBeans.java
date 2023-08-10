@@ -10,9 +10,10 @@ public class UseMainBeans {
 
     private final FooComponent fooComponent;
     private final BarComponent barComponent;
-    private final BuzzComponent buzzComponent;
 
-   // here:
+    private BuzzComponent buzzComponent;
+
+    // here:
    // fooComponent is scanned as @Component in src, and defined as method in tests: false error - fixed
     // barComponent is defined as method both in src and tests: ok
     // buzzComponent is scanned as @Component and defined as method in src only: no errors shown, but should
