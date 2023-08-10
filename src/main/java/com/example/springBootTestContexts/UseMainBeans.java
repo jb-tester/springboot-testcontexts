@@ -21,6 +21,6 @@ public class UseMainBeans {
     }
 
     public String getId() {
-        return "use components: "+fooComponent.getId() + ", " + barComponent.getId();
+        return "use components: "+fooComponent.getId() + ", " + barComponent.getId() + ", " + buzzComponent.getId();
     }
 }

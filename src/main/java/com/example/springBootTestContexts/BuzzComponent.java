@@ -1,5 +1,6 @@
 package com.example.springBootTestContexts;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 /**
@@ -10,4 +11,14 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class BuzzComponent {
+    @Value("${buzz.id}")
+    String id;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 }

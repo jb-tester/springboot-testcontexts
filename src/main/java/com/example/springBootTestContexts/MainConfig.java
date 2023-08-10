@@ -11,6 +11,8 @@ public class MainConfig {
     }
     @Bean
     public BuzzComponent buzzComponent() {
-        return new BuzzComponent();
+        BuzzComponent buzzComp = new BuzzComponent();
+        buzzComp.setId("buzz as bean");
+        return buzzComp;
     }
 }
